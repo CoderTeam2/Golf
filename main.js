@@ -14,8 +14,8 @@ function load_img(){
 			top:holeY,
 			left:holeX
 		});
-	});
-	canvas.add(holeObj);
+	   canvas.add(holeObj);
+        });
 	new_image();
 }
 
@@ -28,8 +28,9 @@ function new_image(){
 			top: ballY,
 			left: ballX
 		});
+	   canvas.add(ballObj);
 	});
-	canvas.add(ballObj);
+	
 }
 
 window.addEventListener("keydown", my_keydown);
